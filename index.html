@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaSctipt Calculator # 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <table>
+            <div class="display">
+                <input type="text" id="result" placeholder="0" name="displayResult" />
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button onclick="clearbtnWork();" class="clear_btn" name="b7"> </button><span
+                        class="clearspan">C</span>
+                </div>
+                <div class="row">
+                    <input type="button" value="7" onclick="calculatorFunc('7')" name="b7">
+                    <input type="button" value="8" onclick="calculatorFunc('8')" name="b8">
+                    <input type="button" value="9" onclick="calculatorFunc('9')" name="b9">
+                    <input type="button" value="+" onclick="calculatorFunc('+')" name="add">
+                </div>
+
+                <div class="row">
+                    <input type="button" onclick="calculatorFunc('4')" name="b4" value="4">
+                    <input type="button" onclick="calculatorFunc('5')" name="b5" value="5">
+                    <input type="button" onclick="calculatorFunc('6')" name="b6" value="6">
+                    <input type="button" onclick="calculatorFunc('-')" name="sub" value="-">
+                </div>
+
+                <div class="row">
+                    <input type="button" onclick="calculatorFunc('1')" name="b1" value="1">
+                    <input type="button" onclick="calculatorFunc('2')" name="b2" value="2">
+                    <input type="button" onclick="calculatorFunc('3')" name="b3" value="3">
+                    <input type="button" onclick="calculatorFunc('*')" name="mul" value="*">
+                </div>
+
+                <div class="row">
+                    <input type="button" onclick="calculatorFunc('0')" name="b0" value="0">
+                    <input type="button" onclick="calculatorFunc('.')" name="potb" value=".">
+                    <input type="button" onclick="calculatorFunc('/')" name="divb" value="/">
+                    <input type="button" onclick="resutlFinderFunction();" class="resultbtn" value="=">
+                </div>
+            </div>
+
+        </table>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
